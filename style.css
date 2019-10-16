@@ -78,3 +78,8 @@ font-family: 'Markazi Text', serif;
 img {
 	border: none;
 }
+.photo{
+	padding:0;
+	list-style-type: none;
+
+}

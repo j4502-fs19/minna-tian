@@ -9,3 +9,40 @@
     flex-direction:row;
     justify-content:center;
 }
+
+.photo{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+  grid-template-areas:
+  "a a b"
+  "d d ."
+  "c e ."
+}
+
+.photo li {
+    background-color: #ffdead;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.blog1{
+  grid-area:a;
+}
+
+.blog4{
+  grid-area:b;
+}
+
+.blog6{
+  grid-area:c;
+}
+
+.blog7{
+  grid-area:d;
+}
