@@ -7,7 +7,7 @@ p{
 }
 
 body {
-background-color:	#FFEBCD;
+background-color:	#f2f2f2;
 align-items: center;
 }
 
@@ -59,13 +59,13 @@ font-family: 'Markazi Text', serif;
 
 #nav a:visited {
 	  display:block;
-    color: 		#FFD700;
+    color: 	#0d0d0d;
     font-family: 'Markazi Text', serif;
 }
 
 #nav a:hover, #nav a:active {
   display:block;
-    background-color: 		#FFFAFA
+    background-color:#a6a6a6
 }
 
 #footer {
@@ -83,3 +83,55 @@ img {
 	list-style-type: none;
 
 }
+#nav{
+  display:flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width:600px) {
+  #nav {
+    flex-direction:row;
+    justify-content:center;
+}
+
+.photo{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+  grid-template-areas:
+  "a a b"
+  "d d ."
+  "c e ."
+}
+
+.photo li {
+    background-color: #a6a6a6;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.blog1{
+  grid-area:a;
+}
+
+.blog4{
+  grid-area:b;
+}
+
+.blog6{
+  grid-area:c;
+}
+
+.blog7{
+  grid-area:d;
+}
+
+#photo13{
+	padding:0;
+	list-style-type:none;
+	}
